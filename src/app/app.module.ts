@@ -1,19 +1,17 @@
 import { NgModule }      from '@angular/core';
-import { FormsModule }  from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule }  from '@angular/material';
-import { HttpModule }  from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 import { AppComponent }  from './app.component';
 import 'hammerjs';
 
 
-
 @NgModule({
-  imports:      [ 
-                  BrowserModule, 
-                  MaterialModule.forRoot(),
+  imports:      [ BrowserModule,
                   FormsModule,
-                  HttpModule],
+                  HttpModule,
+                  MaterialModule.forRoot() ],
   declarations: [ AppComponent ],
   providers:[],
   bootstrap:    [ AppComponent ]
